@@ -1,15 +1,25 @@
 {
-  "name": "app",
+  "name": "nodejs-docker-jenkins",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Express product API containerised with Docker, built by Jenkins and GitHub Actions, instrumented with Prometheus metrics",
+  "main": "server.js",
   "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "keywords": [
+    "devops",
+    "docker",
+    "jenkins",
+    "prometheus",
+    "express"
+  ],
+  "author": "Yashas R",
+  "license": "MIT",
   "dependencies": {
     "express": "^5.2.1",
     "prom-client": "^15.1.3"
